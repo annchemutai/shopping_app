@@ -32,8 +32,10 @@ const router = createRouter({
       component: Signup
     },
     {
+      name: 'ViewProduct',
       path: '/viewproduct',
-      component: ViewProduct
+      component: ViewProduct,
+      props: route => ({ id: Number(route.params.id) }) 
     },
     {
       path: '/admin',
