@@ -6,7 +6,7 @@ import Profile from '@/components/Profile.vue'
 import Products from '@/components/Products.vue'
 import ViewProduct from '@/components/ViewProducts.vue'
 import Admin from '@/components/Admin.vue'
-
+import Orders from '@/components/Orders.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,7 +40,11 @@ const router = createRouter({
     {
       path: '/admin',
       component: Admin
-    }
+    },
+    {
+      path: '/orders',
+      component: Orders
+    },
   ],
 })
 

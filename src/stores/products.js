@@ -104,8 +104,7 @@ export const useProductsStore = defineStore('products', () => {
     }
 
     function addProduct(data){
-        const lastId = products.value.length > 0 ? 
-            products.value[products.value.length - 1].id : 0
+        const lastId = products.value.length > 0 ? products.value[products.value.length - 1].id : 0
         data.id = lastId + 1
         products.value.push(data)
     }
